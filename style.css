@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+:root{
+    --color-main: #c8395f;
+    --color-secondary: #DE4E64;
+    --gradient: linear-gradient(to bottom, #c8395f, rgb(224, 94, 114));
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Lato";
+    margin:0;
+    padding:0;
+    font-size: 1.6rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main);
+    height: 100vh;
+}
+
+.form-card{
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 5px 30px rgba(0,0,0,.3);
+    position: relative;
+}
+.form-control{
+    padding: 1rem 0;
+}
+.form-control label{
+    display: block;
+    color: var(--color-secondary);
+}
+.form-control input{
+    width: 100%;
+}
+.form-control input[type="checkbox"]{
+   display:inline-block;
+   width: 10px;
+}
+.form-control p{
+   display:inline;
+   font-size: 1rem;
+}
+
+ /* ----------- LEFT SIDE */
+
+
+.form-card__left-side{
+    width: 40%;
+    background: var(--gradient);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   color: white;
+}
+
+.icon{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background: var(--gradient);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.form-card__sign-up-header{
+    transform: translate(-50%, -50%);
+}
+.form-card__logo{
+    position: absolute;
+    top:1rem;
+    left: 1rem;
+}
+
+.form-card__left-side-content{
+    padding: 1rem;
+}
+
+ /* ----------- RIGHT SIDE */
+
+.form-card__form{
+    width: 90%;
+    padding: 5rem;
+}
+
+.form-card__right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+
+.form-card__form{
+    width: 90%;
+    padding: 5rem;
+}
+
+.form-card__form input:not([type='submit']){
+    border: none;
+    border-bottom: 1px solid rgba(222, 78, 100, 0.233);
+    outline:none;
+    padding: 1rem;
+}
+
+.form-card__form p{
+    color: var(--color-secondary);
+}
+.form-card__form input[type="submit"]{
+    color: white;
+    background: var(--gradient);
+    padding: 1rem 2rem;;
+    border: none;
+}
+
+input::placeholder{
+    color: var(--color-main);
+    opacity: .3;
+    font-weight: 100;
+}
